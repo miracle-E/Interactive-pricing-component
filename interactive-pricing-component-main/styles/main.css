@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Manrope';
+  background-color: hsl(230, 100%, 99%);
+  
+  min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  text-align: center; */
+}
+.all {
+position : relative;
+
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.bg-pattern {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.pattern-circles {
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  width: 200px;
+}
+.body-text {
+  /* height: 20%; */
+  position: absolute;
+  left: 39%;
+  top: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(227, 35%, 25%);
+
+}
+.body-text p {
+  font-size: 1rem !important;
+  text-align: center;
+  margin-top: 10px;
+color: hsl(225, 20%, 60%);
+}
+.card {
+height: 400px;
+position: absolute;
+background-color: white;
+top: 14rem;
+left: 36%;
+width: 30rem;
+box-shadow : 2px 20px 57px -23px rgba(0, 0, 0, 0.75);
+font-weight: 600;
+border-radius: 10px;
+}
+
+.card-inner{
+  width: 80%;
+  display:flex;
+  flex-direction:row;
+  justify-content : space-between;
+  margin : auto;
+  padding: 25px;
+  line-height: 18px;
+}
+.views {
+color : hsl(225, 20%, 60%);
+
+}
+.price {
+  color: hsl(227, 35%, 25%);
+  font-weight: 700;
+  font-size: 40px;
+}
+.month {
+  color: hsl(225, 20%, 60%);
+}
+.slider-area > input {
+  -webkit-appearance: none;
+    height: 10px;
+    width: 80%;
+    background-color: hsl(224, 65%, 95%);
+    border: none;
+    margin: 50px 50px;
+    border-radius: 25px;
+    box-shadow: 0px 43px 60px -16px rgba(0,0,0,1);
+    outline: none;
+}
+.slider::-webkit-slider-thumb {
+   -webkit-appearance: none;
+    height: 45px;
+    width: 45px;
+    background-color: hsl(174, 86%, 45%);
+    border-radius: 50%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    box-shadow: 0px 43px 60px -16px rgba(0,0,0,1);
+}
+.monthly-billing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
+}
+.monthly-billing input[type="checkbox"] {
+   margin: 0 12px;
+    background-color: hsl(224, 65%, 95%);
+    position: relative;
+    -webkit-appearance: none;
+    width: 48px;
+    height: 24px;
+    border-radius: 12px;
+    transition: 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+.month-b {
+  display: inline-flex;
+}
+.year-b {
+  display: inline-flex;
+}
+.year-b p {
+  margin-right: 7px;
+}
+.percentage {
+  color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    padding: 4px 6px;
+    border-radius: 18px;
+    font-size: 12px;
+}
+hr {
+  margin-top: 10%;
+  border: 2px solid hsl(222deg 87% 97%);
+}
+.card-footer {
+  margin-left: 40px;
+  display: flex;
+  /* flex-direction: column; */
+}
+.benefits {
+  list-style-type: none;
+  margin-top: 42px;
+}
+.benefit {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+.benefit > img {
+  margin-right: 7px;
+}
+.btn {
+   color: hsl(225, 20%, 60%);
+    background-color: hsl(227, 35%, 25%);
+    border: 0;
+    padding: 11px 40px;
+    border-radius: 60px;
+    margin: 35px;
+    font-weight: 900;
+    cursor: pointer;
+    outline: none;
+}
+.btn-div {
+  margin-top: 25px;
+}
+
+.monthly-billing input:checked[type="checkbox"]{
+    background-color: hsl(174, 86%, 45%);
+}
+
+.monthly-billing input:checked[type="checkbox"]:before{
+    left: 28px;
+}
+
+.monthly-billing input[type="checkbox"]:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    top: 4px;
+    left: 4px;
+    background-color: white;
+    transition: 0.5s;
+}
